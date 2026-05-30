@@ -10,7 +10,7 @@ int main(){
     // cout<<*ptr<<endl;
 
     int arr[5];
-    int  number=45;
+    int  number = 45;
     // arr=&number;
     cout<<*arr<<endl;//arr ek fixed address hai
 

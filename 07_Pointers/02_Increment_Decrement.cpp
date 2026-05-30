@@ -4,7 +4,7 @@ int main(){
     int a = 6;
     int *ptr = &a;
     int b = 8;
-    int*ptr2 = &b;
+    int *ptr2 = &b;
 
     cout<<ptr<<endl; //address of a
     // ptr++; // 4 bytes ka increment hoga kyuki int pointer pointer hai
