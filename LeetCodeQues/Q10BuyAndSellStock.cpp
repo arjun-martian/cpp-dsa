@@ -16,7 +16,7 @@ void maxProfit(int *price,int size){
     for(int i=0;i<size;i++){
         int currProfit = price[i] - bestBuy[i];
         maxProfit = max(maxProfit, currProfit);
-    }
+     }
 
     cout << maxProfit << endl;
 
