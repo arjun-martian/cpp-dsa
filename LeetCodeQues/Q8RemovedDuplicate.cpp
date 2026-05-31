@@ -11,8 +11,8 @@ int main(){
         for(;i<k-1;i++){
             if(nums[i]==nums[i+1]){
                 nums.erase(nums.begin()+i);
-                i--;
-                k++;
+                i++;
+                k--;
             }
         }
         cout<<k<<endl;
