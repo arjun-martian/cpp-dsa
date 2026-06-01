@@ -17,6 +17,15 @@ void waterTrapped(int *height,int size){
         right_Max[i] = max(right_Max[i+1],height[i+1]);
     }
     
+    int waterTrapped = 0;
+    for(int i=0;i<size;i++){
+        int currwater = min(left_Max[i],right_Max[i]) - height[i];
+        if(currwater>0){
+            waterTrapped += currwater;
+        }
+    }
+    cout<<waterTrapped<<endl;
+
 }
 
 int main(){
