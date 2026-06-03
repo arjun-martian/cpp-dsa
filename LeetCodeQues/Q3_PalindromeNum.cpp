@@ -28,5 +28,4 @@ int main(){
         }
     cout<<"true"<<endl;
 
-    return 0;
 }
