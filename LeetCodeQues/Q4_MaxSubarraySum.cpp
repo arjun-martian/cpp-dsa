@@ -1,4 +1,5 @@
 #include<iostream>
+#include<climits>
 using namespace std;
 int main(){
     //BRUTE FORCE APPROACH
@@ -20,7 +21,7 @@ int main(){
    int n=7;
     int arr[7]={3, -4, 5, 4, -1, 7, -8};
     int Currsum=0;
-    int maxSum=INT8_MIN;
+    int maxSum=INT_MIN;
 
     for(int val:arr){
             Currsum+=val;
