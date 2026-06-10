@@ -28,7 +28,10 @@ void swapThenumber(vector<int>& nums,int size){
         for(int j=0;j<size-i-1;j++){
 
             // if(nums[j]>nums[j+1]) swap(nums[j],nums[j+1]); // ascending order
-            if(nums[j]<nums[j+1]) swap(nums[j],nums[j+1]); isSwap = true; // descending order
+            if(nums[j]<nums[j+1]){
+              swap(nums[j],nums[j+1]); // descending order
+              isSwap = true;
+            }
             
         }
         if(!isSwap){
