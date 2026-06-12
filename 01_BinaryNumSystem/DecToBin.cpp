@@ -4,20 +4,20 @@ using namespace std;
 int decTobinary(int decNum);
 int main(){
     //MY METHOD
-    // int n=71;
-    // int original=n;
+    int decNum=71;
+    // int original=decNum;
     // int sum=0;
     // int j=0;
-//     while(n!=0){
-//        sum=(sum*10)+n%2;
-//        n/=2;
+//     while(decNum!=0){
+//        sum=(sum*10)+decNum%2;
+//        decNum/=2;
 //     }
     
 //     while(sum!=0){
-//         n=(n*10)+(sum%10);
+//         decNum=(decNum*10)+(sum%10);
 //         sum/=10;
 //     }
-//     cout<<"Decimal number "<<original<<" into Binary number "<<n<<endl;
+//     cout<<"Decimal number "<<original<<" into Binary number "<<decNum<<endl;
     //Teacher's Method
     for(int i=1;i<=10;i++){
         cout<<decTobinary(i)<<endl;
