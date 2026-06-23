@@ -40,7 +40,7 @@ void selection_sort(vector<int>& nums,int size){
          int minIndx = i;
         for(int j=i+1;j<size;j++){
 
-             if(nums[j]<nums[minIndx]) minIndx = j;
+            if(nums[j]<nums[minIndx]) minIndx = j;
 
         }
         swap(nums[i],nums[minIndx]);
