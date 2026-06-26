@@ -14,6 +14,7 @@ int main(){
 }
 
 void insertion_sort(vector<int>& nums,int n){
+    // TIME COMPLEXITY:O(n^2)
      for(int i=1;i<n;i++){
         int curr = nums[i];
         int prvs = i-1;
