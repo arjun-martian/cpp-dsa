@@ -22,17 +22,19 @@ void counting_sorting(int num[],int n){
      int freq[10000]={0}; // range
      int maxNum = INT_MIN, minNum =INT_MAX;
 
-     for(int i=0;i<n;i++){
-        maxNum = max(num[i],maxNum);
-        minNum = min(num[i],minNum);
-     }
+    //  for(int i=0;i<n;i++){
+    //     maxNum = max(num[i],maxNum);
+    //     minNum = min(num[i],minNum);
+    //  }
 
-     // 1st step
+     // 1st step --> O(n)
      for(int i=0;i<n;i++){
          freq[num[i]]++;
+         maxNum = max(num[i],maxNum);
+         minNum = min(num[i],minNum);
      }
      
-     // 2nd step
+     // 2nd step --> O(range) = maxNum -minNum
      for(int i=minNum,j=0;i<maxNum;i++){
         while(freq[i]>0){
             num[j] = i;
