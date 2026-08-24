@@ -4,7 +4,7 @@ using namespace std;
 
 void maxProfit(int *price,int size){
 
-    int bestBuy[100000];
+    int bestBuy[100000];// auxiliary array -->> additional info
     bestBuy[0] = INT_MAX;
 
     for(int i=1;i<size;i++){
