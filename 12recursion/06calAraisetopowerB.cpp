@@ -9,9 +9,17 @@ using namespace std;
 // }
 
 // TEACHER'S METHOD
+// int calAraisetopowerB(int a,int b){
+//     if(b==0) return 1;
+//     return a*calAraisetopowerB(a,b-1);
+// }
+
+//TEACHER'S METHOD 2
 int calAraisetopowerB(int a,int b){
     if(b==0) return 1;
-    return a*calAraisetopowerB(a,b-1);
+    int x=calAraisetopowerB(a,b/2);
+    if(b%2==0) return x*x;
+    else return x*x*a;
 }
 
 int main(){
@@ -20,7 +28,7 @@ int main(){
     cin>>a;
 
     int b;
-    cout<<"Enter "<<a<<" raise to power: ";
+    cout<<"Enter power: ";
     cin>>b;
 
     cout<<calAraisetopowerB(a,b)<<endl;
